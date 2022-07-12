@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자료형 01</title>
 </head>
+
 <body>
     <div id="box">나는 박스</div>
 
@@ -18,11 +20,11 @@
         let f = null;
 
         console.log(
-            a,b,c,d,e,f
+            a, b, c, d, e, f
         );
 
         //각 변수들의 자료향을 찍어봄.
-        //숫자(number), 문자(string), 참, 거짓 (boolean), undefined, null(객체)
+        //원시형 타입으로 숫자(number), 문자(string), 참, 거짓 (boolean), undefined, null(객체)
 
         console.log(
             typeof (a),
@@ -54,7 +56,28 @@
             Boolean(TF),
         );
 
+        const 객체 = {
+            name: '소현',
+            age: 27,
+            work: function () {
+                console.log('늦잠자기');
+            }
+        }
+
+        console.log(객체.name, 객체['name']);
+
+        const 배열 = [1,2,3,4,5];
+
+        console.log(배열[0]);
+
+        const 함수 = function(){
+            return '나는 함수';
+        }
+
+        console.log(함수());
+
     </script>
 
 </body>
+
 </html>
