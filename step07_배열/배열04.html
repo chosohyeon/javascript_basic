@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 04</title>
+</head>
+
+<body>
+    <h1>배열을 공부합니다. 04</h1>
+
+    <script>
+        // indexOf로 index 반환하기
+        const arr = ['하나','둘','셋','넷','다섯'];
+        const arrNum = [10, 28, 4, 38, 6, 45]
+
+        const idx = arr.indexOf('셋');
+        console.log(idx);
+
+        const here = arr.indexOf('넷');
+        console.log(here);
+
+        const find = arr.find(el => el === '다섯');
+        console.log(find);
+
+        const find2 = arrNum.find(el => el > 12);
+        console.log(find2);
+
+        //새로운 배열을 반환한다.
+        const find3 = arrNum.filter(el => el > 12);
+        console.log(find3);
+
+        //새로운 배열을 반환한다.
+        const cut = arr.slice(0, 2);
+        console.log(cut);
+
+        //배열 자체의 순서를 바꿔버린다.
+        // const change = [...arr].reverse();
+        const change = arr.reverse();
+        console.log(change);
+
+        console.log(arr);
+    
+    </script>
+</body>
+
+</html>
