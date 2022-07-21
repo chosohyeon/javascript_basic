@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 05</title>
+</head>
+
+<body>
+    <ul id="UL"></ul>
+
+    <script>
+
+        const DATA = [
+            { id: 1, content: "나는 토마토다.", date: "2022년 07월 21일" },
+            { id: 2, content: "나는 수박이다.", date: "2022년 07월 21일" },
+            { id: 3, content: "나는 멜론이다.", date: "2022년 07월 21일" },
+            { id: 4, content: "나는 바나나다.", date: "2022년 07월 21일" },
+            { id: 5, content: "나는 키위다.", date: "2022년 07월 21일" },
+        ]
+
+        const RESULT = DATA.map(data => '<li>' + data.content + '</li>').join(''); //화살표 함수는 암묵적으로 자동 리턴을 해준다고 함.
+        console.log(RESULT);
+        document.querySelector('#UL').innerHTML = RESULT;
+
+        // <ul id="UL">
+        //     {
+        //         DATA.map(
+        //             <li>{data.content}</li>
+        //         )
+        //     }
+        // </ul>
+
+    </script>
+</body>
+
+</html>
